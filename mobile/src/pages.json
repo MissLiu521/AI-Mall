@@ -1,0 +1,44 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {}
+  },
+  "pages": [
+    { "path": "pages/index/index", "style": { "navigationBarTitleText": "AI Mall", "enablePullDownRefresh": true } },
+    { "path": "pages/category/category", "style": { "navigationBarTitleText": "全部商品" } },
+    { "path": "pages/detail/detail", "style": { "navigationBarTitleText": "商品详情" } },
+    { "path": "pages/reviews/reviews", "style": { "navigationBarTitleText": "全部评价" } },
+    { "path": "pages/promo/promo", "style": { "navigationBarTitleText": "促销活动" } },
+    { "path": "pages/feed/feed", "style": { "navigationBarTitleText": "逛逛" } },
+    { "path": "pages/assets/assets", "style": { "navigationBarTitleText": "我的资产" } },
+    { "path": "pages/cart/cart", "style": { "navigationBarTitleText": "购物车" } },
+    { "path": "pages/checkout/checkout", "style": { "navigationBarTitleText": "确认订单" } },
+    { "path": "pages/orders/orders", "style": { "navigationBarTitleText": "我的订单" } },
+    { "path": "pages/order-detail/order-detail", "style": { "navigationBarTitleText": "订单详情" } },
+    { "path": "pages/mine/mine", "style": { "navigationBarTitleText": "我的" } },
+    { "path": "pages/login/login", "style": { "navigationBarTitleText": "登录" } },
+    { "path": "pages/ai/ai", "style": { "navigationBarTitleText": "AI 助手", "navigationStyle": "custom" } }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "AI Mall",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f7f8fa"
+  },
+  "tabBar": {
+    "color": "#8d94a6",
+    "selectedColor": "#2f5bea",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "fontSize": "12px",
+    "iconWidth": "0px",
+    "spacing": "3px",
+    "height": "52px",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/category/category", "text": "分类" },
+      { "pagePath": "pages/cart/cart", "text": "购物车" },
+      { "pagePath": "pages/mine/mine", "text": "我的" }
+    ]
+  }
+}

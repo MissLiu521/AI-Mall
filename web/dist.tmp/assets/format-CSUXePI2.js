@@ -1,0 +1,1 @@
+function i(n,{seconds:o=!1}={}){if(!n)return"";const r=Date.parse(n);if(!Number.isFinite(r))return n;const t=new Date(r),e=a=>String(a).padStart(2,"0"),s=`${t.getFullYear()}-${e(t.getMonth()+1)}-${e(t.getDate())} ${e(t.getHours())}:${e(t.getMinutes())}`;return o?`${s}:${e(t.getSeconds())}`:s}export{i as f};

@@ -1,0 +1,37 @@
+{
+  "name": "ai-mall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI Mall - B/C 一体化 AI 商城系统",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix web install && npm --prefix mobile install",
+    "dev": "node scripts/dev-node22.js",
+    "dev:server": "npm --prefix server run dev",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "npm --prefix server start",
+    "seed": "npm --prefix server run seed",
+    "test": "npm --prefix server test",
+    "dev:mobile": "npm --prefix mobile run dev:h5",
+    "dev:mp-weixin": "npm --prefix mobile run dev:mp-weixin",
+    "dev:mp-alipay": "npm --prefix mobile run dev:mp-alipay",
+    "build:h5": "npm --prefix mobile run build:h5",
+    "build:mp-weixin": "npm --prefix mobile run build:mp-weixin",
+    "build:mp-alipay": "npm --prefix mobile run build:mp-alipay",
+    "build:mobile": "npm run build:h5 && npm run build:mp-weixin && npm run build:mp-alipay",
+    "test:address": "node scripts/test-address.mjs",
+    "test:smoke": "node scripts/smoke.js",
+    "test:api": "node scripts/audit-endpoints.js",
+    "test:flows": "node scripts/verify-flows.js",
+    "test:review": "node scripts/verify-review-reward.js",
+    "test:tags": "node scripts/verify-review-tags.js",
+    "test:group": "node scripts/test-group-timeout.js",
+    "e2e:address": "node scripts/e2e-address.mjs",
+    "e2e:address:mobile": "node scripts/e2e-address-mobile.mjs",
+    "e2e:flows": "node scripts/e2e-flows.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}
